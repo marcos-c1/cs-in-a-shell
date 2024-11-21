@@ -1,5 +1,5 @@
 #include "utils.h"
-#define MAX_RANDOM_NUMBER 10
+#define MAX_RANDOM_NUMBER 1000000
 
 void printArray(int *v, size_t size){
     printf("[");

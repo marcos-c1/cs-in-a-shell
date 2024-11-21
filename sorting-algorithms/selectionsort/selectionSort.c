@@ -1,5 +1,5 @@
 #include "selectionSort.h"
-#include "../Utils/utils.h"
+#include "../utils/utils.h"
 
 void selectionSort(int *v, size_t size)
 {

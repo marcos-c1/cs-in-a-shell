@@ -1,5 +1,5 @@
 #include "heapSort.h"
-#include "../Utils/utils.h"
+#include "../utils/utils.h"
 void heapify(int *v, int begin, int end){
     int maior = begin;
     int left_child = 2*begin+1, right_child = 2*begin+2;

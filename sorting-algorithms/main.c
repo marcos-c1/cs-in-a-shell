@@ -10,7 +10,7 @@
 
 #include "./utils/utils.h"
 
-#define tam 10
+#define tam 1000000
 
 int main(){
     int *v = (int*)malloc(sizeof(int)*tam);
@@ -29,7 +29,7 @@ int main(){
         case 5: selectionSort(v, tam); break;
         case 6: quickSort(v, 0, tam-1); break;
         case 7: countingSort(v, tam, tam); break;
-        case 8: shellSort(v, tam); break;
+        //case 8: shellSort(v, tam); break;
         default: return -1;
     }
 

@@ -1,4 +1,4 @@
-FILES=utils bubbleSort heapSort mergeSort insertionSort selectionSort quickSort countingSort
+FILES=u bubbleSort heapSort mergeSort insertionSort selectionSort quickSort countingSort
 CFLAGS=-Wall
 GCC=gcc -c
 
@@ -8,6 +8,7 @@ main: sorting
 	gcc $(CFLAGS) $(FILES) main.c -o main
 
 sorting: utils
+	$(GCC) ./utils/utils.c -o u
 	$(GCC) ./bubblesort/bubbleSort.c -o bubbleSort
 	$(GCC) ./heapsort/heapSort.c -o heapSort
 	$(GCC) ./mergesort/mergeSort.c -o mergeSort
@@ -17,7 +18,7 @@ sorting: utils
 	$(GCC) ./countingsort/countingSort.c -o countingSort
 
 utils:  
-	$(GCC) ./Utils/utils.c -o utils
+	$(GCC) ./utils/utils.c -o u
 
 rm:
 	rm -f *.o $(FILES)
